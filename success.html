@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success - Haircules</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">💈 Haircules</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card text-center">
+                    <div class="card-header bg-success text-white">
+                        <h4>✅ Tempahan Berjaya!</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Terima kasih, {{ appointment.customer_name }}!</h5>
+                        <p class="card-text">Tempahan anda telah direkodkan.</p>
+                        
+                        <div class="alert alert-info mt-4">
+                            <p><strong>📅 Tarikh:</strong> {{ appointment.date }}</p>
+                            <p><strong>⏰ Masa:</strong> {{ appointment.time }}</p>
+                            <p><strong>💇 Barber:</strong> {{ appointment.barber.name }}</p>
+                            <p><strong>✂️ Gaya:</strong> {{ appointment.hairstyle.name }}</p>
+                            <p><strong>🔄 Status:</strong> <span class="badge bg-warning">Pending</span></p>
+                        </div>
+                        
+                        <a href="/" class="btn btn-primary">Kembali ke Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

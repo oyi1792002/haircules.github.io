@@ -1,6 +1,0 @@
-	
-api secret : ZkG9dwXmhVFEiSqHeVvhpFeGgGB1PVSg
-api key :  cufKcRgV5YmKVr5RIDpmqrpO89mrfN7o
-
-https://console.faceplusplus.com/app/apikey/view/102098
-https://aistudio.google.com/app/api-keys
